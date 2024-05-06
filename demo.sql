@@ -1,12 +1,13 @@
-CREATE TABLE products (
-    id INT PRIMARY KEY,
-    name VARCHAR(50),
-    price DECIMAL(10, 2)
+--Create a table for 5 products with product names and prices
+CREATE TABLE products(
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(50),
+    product_price DECIMAL(10, 2)
 );
 
-INSERT INTO products (id, name, price)
-VALUES (1, 'Product 1', 10.99),
-             (2, 'Product 2', 19.99),
-             (3, 'Product 3', 15.49),
-             (4, 'Product 4', 7.99),
-             (5, 'Product 5', 12.99);
+--Insert 5 products into the table
+INSERT INTO products(product_name, product_price) VALUES('Apple iPhone 12', 799.99);
+INSERT INTO products(product_name, product_price) VALUES('Samsung Galaxy S21', 899.99);
+INSERT INTO products(product_name, product_price) VALUES('Google Pixel 5', 699.99);
+INSERT INTO products(product_name, product_price) VALUES('OnePlus 8T', 749.99);
+INSERT INTO products(product_name, product_price) VALUES('Xiaomi Mi 10T', 499.99);
